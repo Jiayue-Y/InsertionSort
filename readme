@@ -1,0 +1,29 @@
+Best-Case Analysis: In test case 3, only one element needs to be inserted. Therefore, the time complexity is O(1) in that case.
+
+Worst-Case Analysis: Time complexity is O(n^2) in the worst case. A reversed array is inefficient for Insertion Sort because every new element inserted into the sorted portion of the array is smaller than all the elements already sorted. This means the algorithm must shift all elements of the sorted portion to make room for the new element.
+
+Average-Case Analysis: In average-case, the time complexity is still O(n^2) but it will most likely be about a half of the worst case.
+
+Space Complexity Discussion: The space complexity is O(1). Insertion Sort is an in-place sorting algorithm because it sorts the array by directly modifying the original data structure without requiring significant additional memory. It's sorting in itself and it does not rely on external data structures like additional arrays or linked lists to perform the sorting.
+
+Stability Analysis: Insertion sort is stable becauses it does not change the position of elements when the keys are the same.
+
+Efficiency Discussion: Insertion sort is not efficient for large arrays because its time complexity is O(n^2). Seletive sort is not stable, while insertion and bubble sort are stable. There space complexity are the same as they are all in-place sorting algorithm, but their time complexity are the same. They are all not efficient for large arrays.
+
+Practical Applications: Insertion sort is specifically efficient when the array is nearly sorted, like putting a new book onto a already sorted shelf.
+
+Improvements and Variations: In Binary Insertion Sort, a binary search is used to find the correct position of the new element within the sorted portion of the array, instead of performing linear comparisons.
+
+Sample output:
+
+Original Array: 44 46 31 32 2 40
+Sorted Array: 2 31 32 40 44 46
+
+Original Array: 89 56 33 38 65 86 94 97 82 82 2 63 67 18 93 40 91 95 38 4 98 78 60 77 43 58 78 65 54 60 75 57 95 59 86 38 50 62 27 63 94 31 6 36 93 77 17 54 21 46 72 4 21 79 10 70 28 54 83 81 14 43 93 77 18 55 21 55 19 5 90 77 60 26 85 4 0 77 64 40 62 12 25 64 50 86 92 26 84 58 61 50 18 36 87 35 78 59 70 22
+Sorted Array: 0 2 4 4 4 5 6 10 12 14 17 18 18 18 19 21 21 21 22 25 26 26 27 28 31 33 35 36 36 38 38 38 40 40 43 43 46 50 50 50 54 54 54 55 55 56 57 58 58 59 59 60 60 60 61 62 62 63 63 64 64 65 65 67 70 70 72 75 77 77 77 77 77 78 78 78 79 81 82 82 83 84 85 86 86 86 87 89 90 91 92 93 93 93 94 94 95 95 97 98
+
+Original Array: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 23
+Sorted Array: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+
+Original Array: 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+Sorted Array: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
